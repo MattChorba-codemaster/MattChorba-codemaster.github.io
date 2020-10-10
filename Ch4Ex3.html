@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Matt Chorba" content="Matt Chorba">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Applied Scripture</title>
+    <script>
+        /* Defining Table
+         * Input: a person's name
+         * Processing: Create a verse of scripture for that person
+         * Output: The scripture
+         * */
+        function applyScripture() {
+            // Get the user's name from the text field that has the id
+            // of "nameInputBox" and store it in a variable named name
+            let name = document.getElementById('nameInputBox').value;
+
+            // Use string concatenation to create a verse
+            // of scripture personalized for the user.
+            let scripture = "I, " + name + ", having been born of" +
+            " goodly parents, therefore I was taught somewhat" +
+            " in all the learning of my father.";
+
+            // Display the scripture in the Div that has the id "outputDiv".
+            document.getElementById('outputDiv').innerHTML = scripture;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Week 4: Example 2</h1>
+        <h2>Matt Chorba</h2>
+        Please enter your name: <input type="text" id="nameInputBox">
+        <button type="button" onclick="applyScripture()">Verse</button>
+        <div id="outputDiv"></div>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+
+</html>
