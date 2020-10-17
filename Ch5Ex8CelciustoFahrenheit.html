@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Matt Chorba || CIT 160</title>
+</head>
+<body>
+    <header>
+        <h1>Week 5: Chapter 5 Example 8</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Celcius to Fahrenheit</h3>
+        <label>Enter Temperature in Celcius: <input type="text" id="celciusInputBox"></label>
+        <label><button type="button" onclick="celstoFahr()">Convert</button></label>
+        <hr>
+        <p id="fahrenDiv"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        /* Input:      A temperature in Celcius, received as input text string from the User
+         * Processing: Convert the temperature from Celcius to Fahrenheit
+         * OUtput:     The converted Fahrenheit temperature
+        */
+        function celstoFahr() {
+            let text = document.getElementById('celciusInputBox').value;
+
+            // Convert what the user typed from text string into a number
+            let c = parseFloat(text);
+
+            // Convert the Celcius temperature into Fahrenheit
+            let f = c * 9 / 5 + 32;
+
+            // Display the Fahrenheit temperature to the User
+            document.getElementById('fahrenDiv').innerHTML = "The temperature in <strong>Fahrenheit</strong> is: " + f;
+        }
+    </script>
+</body>
+
+</html>
