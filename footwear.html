@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport "content="width-device-width, initial-scale=1.0">
+    <title>Matt Chorba || CIT 160 || Weather Shoes</title>
+    <link rel="stylesheet" href="css/footwear.css"/> <!-- external CSS reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 6: Weather Shoes</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Choose the weather for your shoes recommendation:</h3>
+        <form>
+            <select name="weather" id="weatherSelect">
+                <option value="unknown">--Please choose your weather--</option>
+                <option value="hot">Hot</option>
+                <option value="rain">Rain</option>
+                <option value="snow">Snow</option>
+            </select>
+              
+            <button type="button" onclick="determineShoes()">Check</button>
+        </form>
+        <hr>
+        <p id="shoes"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script src="js/footwear.js"></script>
+</body>
+
+</html>

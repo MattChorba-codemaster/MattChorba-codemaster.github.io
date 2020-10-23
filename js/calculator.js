@@ -37,6 +37,6 @@ if(answer == correctAnswer)
     {
     document.getElementById("outputEvaluation").innerHTML = "Correct!  Good job.";
     }   else
-    document.getElementById("outputEvaluation").innerHTML = "Incorrect.  Try again!";
+    document.getElementById("outputEvaluation").innerHTML = "Incorrect.  Try again!" + correctAnswer;
 
 }
