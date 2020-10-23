@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"content="width-device-width, initial-scale=1.0">
+    <title>Matt Chorba || CIT 160 Exam 1 Part 2 Volume of a Round Cylinder</title>
+    <link rel="stylesheet" href="css/styles.css"/> <!-- external CSS reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 5: Exam 1 Part 2 Volume of a Round Cylinder</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Information About Your Round Cylinder</h3>
+        <label>Enter the Height of your cylinder: <input type="text" id="height"></label>
+        <label>Enter the Radius of your cylinder: <input type="text" id="radius"></label>
+        <label><button type="button" onclick="volumeRoundCylinder()">Calculate Volume</button></label>
+        <hr>
+        <p id="volume"><strong></strong></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function volumeRoundCylinder()  
+        {
+
+            // Input
+            // grab input strings from user and assign them as the values for the declared variables
+            let height = document.getElementById("height").value;
+            let radius = document.getElementById("radius").value;
+
+            // Processing
+            // convert the input string to numbers by using parseFloat
+            height  = parseFloat(height);
+            radius  = parseFloat(radius);
+
+
+            // calculate volume and store in output variable
+            let volume = Math.PI * radius * radius * height;
+
+            // Output
+            document.getElementById("volume").innerHTML = "Volume: " + volume;
+
+        }
+    </script>
+</body>
+
+</html>

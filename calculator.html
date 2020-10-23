@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"content="width-device-width, initial-scale=1.0">
+    <title>Matt Chorba || CIT 160 || W06 || Simple Calculator</title>
+    <link rel="stylesheet" href="css/simplecalc.css"/> <!-- external CSS reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 6: Simple Calc</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Test Your Math Skills!</h3>
+        <form><input type="text" id="number1">
+              <select name="operator" id="operator">
+                  <option>+</option>
+                  <option>-</option>
+                  <option>*</option>
+                  <option>/</option>
+              </select>
+              <input type="text" id="number2"></label>
+              = <input type="text" id="answer">
+        <button type="button" onclick="doMath()">Check</button></form>
+        <hr>
+        <p id="outputEvaluation"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

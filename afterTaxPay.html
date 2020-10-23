@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"content="width-device-width, initial-scale=1.0">
+    <title>Matt Chorba || CIT 160 Exam 1 Part 2 Employee's After Tax Pay</title>
+    <link rel="stylesheet" href="css/styles.css"/> <!-- external CSS reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 5: Exam 1 Part 2 Employee's After-tax Pay</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Information About Hours Worked and Pay</h3>
+        <label>Enter Regular Hours Worked for One Week: <input type="text" id="regularHours"></label>
+        <label>Enter Overtime Hours Worked for One Week: <input type="text" id="overtimeHours"></label>
+        <label><button type="button" onclick="afterTaxPay()">Your After-tax Pay</button></label>
+        <hr>
+        <p id="takeHomePay"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script>
+        function afterTaxPay()  
+        {
+
+            let regularRate  = 15;
+            let overtimeRate = 22.5;
+            let taxAmount    = 0.15;
+
+            // Input
+            // grab input strings from user and assign them as the values for the declared variables
+            let regularHours = document.getElementById("regularHours").value;
+            let overtimeHours = document.getElementById("overtimeHours").value;
+
+            // Processing
+            // convert the input string to numbers by using parseFloat
+            regularHours  = parseFloat(regularHours);
+            overtimeHours = parseFloat(overtimeHours);
+
+
+            // calculate after-tax pay and store in output variable
+            let taxCalc = taxAmount * ((regularHours * regularRate) + (overtimeHours * overtimeRate));
+            let takeHomePay = ((regularHours * regularRate) + (overtimeHours * overtimeRate)) - taxCalc;
+
+            // Output
+            document.getElementById("takeHomePay").innerHTML = "$" + (Math.round(takeHomePay * 100) / 100);
+
+        }
+    </script>
+</body>
+
+</html>
