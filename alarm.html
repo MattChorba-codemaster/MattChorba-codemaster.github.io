@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Matt Chorba || CIT 160 || W07 Assignment: Alarm</title>
+    <link rel="stylesheet" href="css/alarm.css"/> <!-- external CSS reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 7: Alarm</h1>
+        <h2>Matt Chorba</h2>
+    </header>
+    <main>
+        <h3>Can you sleep in today?</h3>
+        <label id="d"></label>
+        <label><button type="button" onclick="canISleepIn()">Check</button></label>
+        <hr>
+        <p id="answer"></p>
+        <div id="debug"></div>
+    </main>
+    <footer>
+        &copy;2020 &bull; Matt Chorba &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+    <script src="js/alarm.js"></script>
+    <script>
+        let d = new Date();
+        document.getElementById("d").innerHTML = "Today's date: " + d;
+    </script>
+</body>
+
+</html>

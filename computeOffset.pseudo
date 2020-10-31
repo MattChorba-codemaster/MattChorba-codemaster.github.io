@@ -1,0 +1,73 @@
+computeOffset(month, year)
+    SET isLeap = isLeap(year)
+    SET monthDays   = 0
+    SET yearDays    = 0
+    SET monthOne    = 31
+    SET monthTwo    = 28
+    SET monthThree  = 31
+    SET monthFour   = 30
+    SET monthFive   = 31
+    SET monthSix    = 30
+    SET monthSeven  = 31
+    SET monthEight  = 31
+    SET monthNine   = 30
+    SET monthTen    = 31
+    SET monthEleven = 30
+    SET monthTwelve = 31
+
+    SWITCH(month)
+        CASE 1
+            monthDays = monthOne
+        CASE 2
+            monthDays = monthOne + monthTwo
+        CASE 3
+            monthDays = monthOne + monthTwo + monthThree
+        CASE 4
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour
+        CASE 5
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive
+        CASE 6
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix
+        CASE 7
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+        CASE 8
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+            + monthEight
+        CASE 9
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+            + monthEight + monthNine
+        CASE 10
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+            + monthEight + monthNine + monthTen
+        CASE 11
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+            + monthEight + monthNine + monthTen + monthEleven
+        CASE 12
+            monthDays = monthOne + monthTwo + monthThree
+            + monthFour + monthFive + monthSix + monthSeven
+            + monthEight + monthNine + monthTen + monthEleven
+            + monthTwelve
+    
+    IF (isLeap == true)
+        monthdays += 1
+    
+    FOR i = 1753, as long as i is less than year, add 1 to i
+        IF isLeap(i) == true
+            yearDays += 366
+        ELSE
+            yearDays += 365
+
+    numDays = yearDays + monthDays
+
+    offset = numDays % 7
+
+    RETURN offset
+END 
