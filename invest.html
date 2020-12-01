@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Investment Calculator</title>
+</head>
+<body>
+  <h1>Investment Calculator</h1>
+  <label>Amount invested (principal)   <input type="text" id="amountInvested" size="5"><br></label>
+  <label>Annual rate (example: .08)    <input type="text" id="annualRate" size="5"><br></label>
+  <label>Number of years               <input type="text" id="numYears" size="5"><br></label>
+  <label>Periods per year              <input type="text" id="periodsPerYear" size="5"><br></label>
+  <button id="computeFutureValueButton" type="button" onclick="doFV()">Compute Future Value </button><br>
+  <button id="resetButton" type="button" onclick="reset()">Reset</button>
+
+  <script>
+    function doFV() {
+    /* Interacts with the user and displays the future value of investment
+     * Input:
+     * Takes no parameters
+     *
+     * Processing:
+     * Is called from the onclick attribute
+     * Gets input from the user
+     * Calls the computeFutureValue function
+     * 
+     * Output:
+     * Displays the result to the user
+     */
+    var principal =  parseFloat(document.getElementById("amountInvested").value);
+    var annualRate = parseFloat(document.getElementById("annualRate").value);
+    var years = parseFloat(document.getElementById("numYears").value);
+    var periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+    var futureValue = computeFutureValue(principal, annualRate, years, periodsPerYear);
+    document.getElementById("computeFutureValueButton").innerHTML = "Future value = " + futureValue;
+    }
+
+    function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+    /* Computes and returns the future value of an investment. 
+     * Input:
+     * accepts values for principal, annualRate, years and periodsPerYear from the calling function
+     * 
+     * Processing:
+     * The formula for computing the future value of an investment is
+     * f = a (1 + r)exp n
+     * Where f is the future value, a is the investment amount sometimes called the principal, 
+     * r is the growth rate per period, and n is the total number of periods throughout the 
+     * life of the investment.
+     * 
+     * Output:
+     * returns futureValue to the calling function
+    */
+      var growthRate = annualRate / periodsPerYear;
+      var numPeriodsTotal = years * periodsPerYear;
+      var futureValue = principal * Math.pow((1 + growthRate), numPeriodsTotal);
+      return futureValue.toFixed(2);
+    }
+
+    function reset() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>
