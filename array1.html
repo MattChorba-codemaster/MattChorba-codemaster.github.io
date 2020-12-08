@@ -67,7 +67,7 @@
     let middle = 0;
     
     if ((list.length % 2) == 0) {     // case for even number of array elements
-      middle = list[left + ((right - left) >>> 1)] + list[(left + ((right - left) >>> 1)) + 1];  
+      middle = (list[left + ((right - left) >>> 1)] + list[(left + ((right - left) >>> 1)) + 1]) / 2;  
     } else {                          // case for odd number of array elements
       middle = list[left + ((right - left) >>> 1)];                                              
     }
