@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Arrays 2</title>
+</head>
+<body>
+  <p>Parse Array:</p>
+  <button type="button" onclick="test()">Click</button>
+  <div id="output"></div>
+
+  <script>
+
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+ function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the countEvens function by calling it two times.
+    let count1 = countEvens(list1);
+    let count2 = countEvens(list2);
+
+    // Test the multiply function by calling it two times.
+    let mult1 = multiply(list1, 3);
+    let mult2 = multiply(list2, 4);
+
+    // Build a string to display to the user.
+    let output =
+            count1 + '<br>' +
+            count2 + '<br>' +
+            mult1 + '<br>' +
+            mult2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+
+  /*Count Evens-- a function that counts and returns the number of even integers in an array.
+  * Input: array from the calling function
+  * Processing: counts the instances of even integers in the array and stores
+  * the count in a new variable
+  * Output:  return the new variable value to the calling function at the insertion point
+  */
+  function countEvens(list) {
+    let first = list[0];
+    let last = list[list.length -1];
+    let evenCounter = 0;
+    
+    for (let i = 0; i < list.length; i++) {
+        if ((list[i] % 2) == 0)
+          evenCounter++;
+    }
+
+    return evenCounter;
+  }
+
+  /*Multiply -- multiply each element in an array by some value and return the products in an array.
+  * Input: array from the calling function
+  * Processing: multiply each element of the array by the multiplier and store in new array
+  * Output:  return the new array to the calling function at the insertion point
+  */
+  function multiply(list, multiplier) {
+    let left = 0;
+    let right = (list.length -1);
+    var products = [0];
+    
+    products[0] = list[0] * multiplier;
+    for ( let i = 1; i < list.length; i++) {
+      products.push(list[i] * multiplier);
+    }
+
+    return products;
+  }
+
+  </script>
+</body>
+</html>
