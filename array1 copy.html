@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Arrays</title>
+</head>
+<body>
+  <p>Parse Array:</p>
+  <button type="button" onclick="test()">Click</button>
+  <div id="output"></div>
+
+  <script>
+
+  /* Defining Table
+  * Input: no user input
+  * Processing: Test the addEnds and getMiddle functions by calling them.
+  * Output: The values returned from the addEnds and getMiddle functions.
+  */
+  function test() {
+    givenName = "Theodore";
+    familyName = "Roosevelt";
+
+    // Test the familyNames function.
+    let nameForTheRecord = makeFullName(givenName, familyName);
+
+      // Test the addEnds function by calling it two times.
+      let sum1 = addEnds(list1);
+      let sum2 = addEnds(list2);
+
+      // Test the getMiddle function by calling it two times.
+      let mid1 = getMiddle(list1);
+      let mid2 = getMiddle(list2);
+
+      // Build a string to display to the user.
+      let output =
+              nameForTheRecord + '<br>' +
+              sum2 + '<br>' +
+              mid1 + '<br>' +
+              mid2;
+
+      // Display the output string for the user to see.
+      document.getElementById('output').innerHTML = output;
+  }
+
+  /*Add Ends-- a function that returns the sum of the first and last values in an array
+  * Input: array from the calling function
+  * Processing: adds the values from the first and last indexes of the array and stores
+  * it in a new variable
+  * Output:  return the new variable value to the calling function at the insertion point
+  */
+  function makeFullName(givenName, familyName); {
+    let formalName;
+
+    formalName = '"' + familyName + '"' + ", " + '"' + givenName + '"';
+    alert(formalName);
+
+    return formalName;
+
+  }
+
+  /*Get Middle -- returns the value of the middle element in an array. If the array has 
+  * an even number of elements, then this function must return the average of the two middle elements.
+  * Input: array from the calling function
+  * Processing: 
+  * determine if the number of array elements is even or odd
+  * determine value at the middle index of the array and store in a new variable
+  * Output:  return the new variable value to the calling function at the insertion point
+  */
+  function getMiddle(list) {
+    let left = 0;
+    let right = (list.length -1);
+    let middle = 0;
+    
+    if ((list.length % 2) == 0) {     // case for even number of array elements
+      middle = (list[left + ((right - left) >>> 1)] + list[(left + ((right - left) >>> 1)) + 1]) / 2;  
+    } else {                          // case for odd number of array elements
+      middle = list[left + ((right - left) >>> 1)];                                              
+    }
+    return middle;
+  }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Arrays 2</title>
+</head>
+<body>
+  <p>Parse Array:</p>
+  <button type="button" onclick="test()">Click</button>
+  <div id="output"></div>
+
+  <script>
+
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+ function test() {
+    let givenName = "Theodore";
+    let familyName = "Roosevelt";
+
+    // Test the familyNames function.
+    let mult2 = makeFullName(givenName, familyName);
+
+    // Build a string to display to the user.
+    let output = mult2;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+
+  /*MakeFullName-- a function that returns a string that contains the family name, a comma, and the given name. 
+  * Input: given name and family name from the calling function
+  * Processing: concatenates the names in the desired format into a new string
+  * Output:  return the new string value to the calling function at the insertion point
+  */
+  function makeFullName(givenName, familyName) {
+
+    let formalName = familyName + ", " + givenName;
+
+    return formalName;
+
+  }
+
+
+  </script>
+</body>
+</html>
