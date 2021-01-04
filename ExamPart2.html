@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Exam Part 2</title>
+</head>
+<body>
+  <p>Exam Part 2</p>
+  <button type="button" onclick="test()">Click</button>
+  <div id="output"></div>
+
+  <script>
+
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+ function test() {
+    let givenName = "Theodore";
+    let familyName = "Roosevelt";
+
+    // Test the familyNames function.
+    let nameForTheRecord = "";
+    nameForTheRecord = makeFullName(givenName, familyName);
+
+
+    // Test the depreciation function.
+    let startValue = 1000.95;
+    let endValue = 950.47;
+    let months = 8;
+
+    let loweredValue = depreciation(startValue, endValue, months)
+
+    // Test the getLast function.
+    let list = [ -3, 0, 7.1, 5 ];
+
+    let lastValue = getLast(list);
+
+    // Test the averageBig function;
+    let list = [ 70, 1010, 950, 2014, 6 ];
+
+    let averageOfBigs = averageBig(list);
+
+    // Build a string to display to the user.
+    let output =
+            nameForTheRecord + '<br>'; //+
+           // loweredValue + '<br>' +
+            //lastValue + '<br>' +
+            //averageOfBigs;
+
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+
+  /*MakeFullName-- a function that returns a string that contains the family name, a comma, and the given name. 
+  * Input: given name and family name from the calling function
+  * Processing: concatenates the names in the desired format into a new string
+  * Output:  return the new string value to the calling function at the insertion point
+  */
+  function makeFullName(givenName, familyName); {
+    let formalName = "";
+
+    formalName = '"' + familyName + '"' + ", " + '"' + givenName + '"';
+    alert(formalName);
+
+    return formalName;
+
+  }
+
+  /* Depreciation -- depreciation that has three parameters named startValue, endValue, and months. 
+  * This function will compute and return the monthly depreciation value of an asset given by this formula:
+  *
+  * d =  (s - e)/m
+  * where d is the monthly depreciation value, s is the starting value of an asset, e is the ending value, and m is the number of months 
+  * someone will own the asset.
+  * Input: values from the calling function
+  * Processing: run the values through the formula
+  * Output:  return the resulting value to the calling function at the insertion point
+  */
+  function depreciation(startValue, endValue, months) {
+    let depreciatedValue;
+
+    return depreciatedValue;
+  }
+
+    /*Get Last-- a function that takes an array named list and returns the value of the last element 
+  * Input: array from the calling function
+  * Processing: stores the value of the last element in the array into a new variable
+  * Output:  return the new variable value to the calling function at the insertion point
+  */
+  function getLast(list) {
+    let last;
+
+    return last;
+
+  }
+
+    /*Average Big-- a function that computes the average of all the numbers stored in the array that are larger than 1000 
+  * Input: array of numbers from the calling function
+  * Processing: evaluates each element of the array and gets the average of all that are over 1000
+  * Output:  return the average value to the calling function at the insertion point
+  */
+  function averageBig(list) {
+    let average;
+
+    return average;
+  }
+
+  </script>
+</body>
+</html>
