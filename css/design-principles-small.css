@@ -1,0 +1,51 @@
+body {
+	text-align: center;
+}
+header,
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1 {
+	background-color: cornflowerblue;
+	font-size: 1.5rem;
+	margin: 0.15rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+section {
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 10px;
+	max-width: 500px;
+	background-color: #abe;
+	box-shadow: 0 0 30px;
+}
+
+#contrastImage   {
+	width: 200px;
+	height: auto;
+}
+
+#repetitionImage   {
+	width: 200px;
+	height: auto;
+}
+
+#whiteSpaceImage   {
+	width: 200px;
+	height: auto;
+}
