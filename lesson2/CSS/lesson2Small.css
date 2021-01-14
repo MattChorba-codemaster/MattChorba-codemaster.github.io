@@ -1,0 +1,101 @@
+body {
+	text-align: center;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+header,
+footer {
+	font-family: 'Major Mono Display', monospace;
+	color: #5F7336;
+	padding: 10px;
+	background-color: #D2D5D9;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+
+}
+
+footer {
+	font-size: 13px;
+	letter-spacing: 1.5pt;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Major Mono Display', monospace;
+	background-color: #D2D5D9;
+	font-size: 1.5rem;
+	margin: 0.15rem;
+}
+
+
+header,
+footer {
+	background-color: #D2D5D9;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	color: #898C2E;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+.primary {
+	background-color: #5F7336;
+}
+.secondary {
+	background-color: #898C2E;
+}
+.accent1 {
+	background-color: #7EA5D9;
+}
+.accent2{
+	background-color: #A67041;
+}
+
+#colors   {
+	width: 200px;
+	height: auto;
+}
+
+p.colored {
+	background-color: #A67041;
+	color: #ffffff;
+  }
