@@ -3,3 +3,9 @@ document.getElementById("year").innerHTML = '&copy;' + d.getFullYear() + '&#124;
 
 let oLastModif = new Date(document.lastModified);
 document.getElementById("lastModified").innerHTML = "Last Updated: " + oLastModif;
+
+function toggleMenu() {
+    document
+        .getElementsByClassName("navigation")[0]
+        .classList.toggle("responsive");
+}

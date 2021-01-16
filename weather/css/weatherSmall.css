@@ -6,21 +6,13 @@ header,
 footer {
 	font-family: 'Major Mono Display', monospace;
 	color: #2a3318;
-	padding: 10px;
+	padding: 10px 10px;
 	background-color: #8a8b8d;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
 
-}
-
-footer {
-	font-size: 13px;
-    letter-spacing: 1.5pt;
-    font-weight: bolder;
-    text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -31,23 +23,23 @@ h1, h2, h3, h4 {
 	margin: 0.15rem;
 }
 
-
-header,
-footer {
-	background-color: #D2D5D9;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-}
-
 header,
 nav,
 main,
 footer {
 	max-width: 767px;
 	margin: 0 auto;
+}
+
+footer {
+	font-size: 13px;
+    letter-spacing: 1.5pt;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.todayDate {
+	text-decoration: none;
 }
 
 h1 {
@@ -111,4 +103,22 @@ nav {
 p.colored {
 	background-color: #A67041;
 	color: #ffffff;
+  }
+
+.contentBox {
+	display: block;
+	margin: 10px auto;
+	border: 1px dashed #0000;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	border: 3px solid green;
   }

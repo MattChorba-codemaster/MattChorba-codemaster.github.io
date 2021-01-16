@@ -14,4 +14,9 @@
     .navigation li a {
 		color: yellow;
     }
+
+    .contentBox {
+        background-color: #bed;
+    }
+
 }
