@@ -63,3 +63,7 @@ label {
 	width: 200px;
 	height: auto;
 }
+
+.clearFix {
+	overflow: auto;
+}
