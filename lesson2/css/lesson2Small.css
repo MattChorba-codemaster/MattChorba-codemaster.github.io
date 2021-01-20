@@ -4,10 +4,10 @@ p, body {
 }
 header,
 footer {
-	font-family: 'Major Mono Display', monospace;
+	font-family: 'Fraunces', serif;
 	color: #2a3318;
 	padding: 10px;
-	background-color: #8a8b8d;
+	background-color: #627691;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -24,7 +24,7 @@ footer {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Fraunces', serif;
     color: #2a3318;
 	background-color: #627691;
 	font-size: 1.5rem;
@@ -54,7 +54,7 @@ h1 {
 	font-size: 2rem;
 }
 h2 {
-	color: #898C2E;
+	color: #2a3318;
 }
 
 nav {
@@ -112,3 +112,12 @@ p.colored {
 	background-color: #A67041;
 	color: #ffffff;
   }
+
+  #mom, #dad  {
+	width: 200px;
+	height: auto;
+}
+
+.clearFix {
+	overflow: auto;
+}

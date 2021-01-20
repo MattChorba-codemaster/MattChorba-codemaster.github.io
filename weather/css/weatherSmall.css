@@ -4,7 +4,7 @@ p, body {
 }
 header,
 footer {
-	font-family: 'Major Mono Display', monospace;
+	font-family: 'Fraunces', serif;
 	color: #2a3318;
 	padding: 10px 10px;
 	background-color: #8a8b8d;
@@ -16,7 +16,7 @@ footer {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Fraunces', serif;
     color: #2a3318;
 	background-color: #627691;
 	font-size: 1.5rem;
