@@ -19,4 +19,13 @@
         background-color: #bed;
     }
 
+    #prestonMap {
+        display: flex;
+        float: left;
+    }
+
+    #fiveDayForecast {
+        display: block;
+    }
+
 }

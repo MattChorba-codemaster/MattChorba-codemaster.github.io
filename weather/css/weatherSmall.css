@@ -18,7 +18,7 @@ footer {
 h1, h2, h3, h4 {
     font-family: 'Fraunces', serif;
     color: #2a3318;
-	background-color: #627691;
+	background-color: #62769177;
 	font-size: 1.5rem;
 	margin: 0.15rem;
 }
@@ -27,7 +27,7 @@ header,
 nav,
 main,
 footer {
-	max-width: 767px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -46,7 +46,10 @@ h1 {
 	font-size: 2rem;
 }
 h2 {
-	color: #898C2E;
+	color: #52531c;
+}
+.weatherSummaryHeader {
+	background-color: #5f733600;
 }
 
 nav {
@@ -105,6 +108,36 @@ p.colored {
 	color: #ffffff;
   }
 
+.heroDiv {
+	margin: 10px auto;
+	position: relative;
+	width: 960px;
+	height: 300px;
+}
+
+.hero-ph {
+	display: block;
+	margin: 10px auto;
+	border: 1px solid #333;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	max-width: 100%;
+	height: 250px;
+}
+
+.weatherSummary {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	position: absolute;
+	background: radial-gradient(#eee, #5F7336);
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #777;
+	opacity: .75;
+}
+
 .contentBox {
 	display: block;
 	margin: 10px auto;
@@ -122,3 +155,54 @@ p.colored {
 	height: 200px;
 	border: 3px solid green;
   }
+
+.active {
+	background: rgba(0, 100, 0, 0.438);
+}
+
+.bannerAd {
+	display: block;
+	background-color: rgb(229, 255, 0);
+}
+
+.notFriday {
+	display: none;
+}
+
+#heroImage {
+	width: 100%;
+	height: 100%;
+}
+
+#articleImage {
+	max-width: 200px;
+	height: auto;
+}
+
+.weatherIcon {
+	max-width: 75%;
+	display: block;
+}
+
+tr {
+	align-content: center;
+}
+
+.socialmedia {
+	padding: 10px;
+}
+  
+.icon {
+	width: 55px;
+	height: 55px;
+	box-shadow: 4px 4px 4px;
+}
+
+
+#prestonMap {
+	display: none;
+}
+
+#fiveDayForecast {
+	display: none;
+}

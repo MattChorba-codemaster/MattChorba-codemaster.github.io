@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="css/weatherMedium.css"/>
     <link rel="stylesheet" href="css/weatherLarge.css"/>
 </head>
-<body>
+<body onload="toggleBannerAd()">
     <header>
+        <div class="bannerAd">There is a pancake hodown at the community center on Saturday!  Bring your cat.</div>
         <h1 class="logo">
         <img id="logo" src="images/Free_Sample_By_Wix.jpeg" alt="logo">
         Weather Dot</h1>
@@ -25,7 +26,7 @@
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>  
             <li><a href="#">Storm Center</a></li>
@@ -34,10 +35,65 @@
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <div class="contentBox">Hero w/Weather Summary</div>
-        <div class="contentBox">5 Day Forecast</div>
-        <div class="contentBox">Article</div>
-        <div class="contentBox">Contact Information</div>
+        <div class="heroDiv">
+            <div class="hero-ph"><img id="heroImage" src="images/Banner-Image-Placeholder-2.png" alt="preston banner photo"></div>
+            <section class="weatherSummary">
+                <h3 class="weatherSummaryHeader">Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76&deg;F </p>
+                <p>Wind Chill: &deg;F</p>
+                <p>Humidity: 69&percnt;</p>
+                <p>Wind Speed: 5 mph</p>
+        </section>
+        </div>
+        <div id="fiveDayForecast" class="contentBox">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="today"></th>
+                    <th id="todayPlusOne"></th>
+                    <th id="todayPlusTwo"></th>
+                    <th id="todayPlusThree"></th>
+                    <th id="todayPlusFour"></th>
+                </tr>
+                <tr>
+                    <td><img class="weatherIcon" src="images/weather-icon-set-sun-png-icon.jpg" alt="sun">89&deg;F </td>
+                    <td><img class="weatherIcon" src="images/weather-icon-set-sun-png-icon.jpg" alt="sun">76&deg;F </td>
+                    <td><img class="weatherIcon" src="images/weather-icon-set-sun-png-icon.jpg" alt="sun">77&deg;F </td>
+                    <td><img class="weatherIcon" src="images/weather-icon-set-sun-png-icon.jpg" alt="sun">98&deg;F </td>
+                    <td><img class="weatherIcon" src="images/weather-icon-set-sun-png-icon.jpg" alt="sun">88&deg;F </td>
+                </tr>
+            </table>
+        </div>
+        <div class="contentBox">
+            <h3>Yogatta Try This!</h3>
+            <p>Every time you get out of body, it pulls you right back in.  Come and learn how to wind up
+                and relax.  We have classes for all levels, and we even make you sign a waiver.
+            </p>
+            <img id="articleImage" src="images/pexels-gabby-k-5384560.jpg" alt="yoga in park"></div>
+        <div class="contentBox">
+            <h4>Contact Information</h4>
+            <img id="prestonMap" src="images/Preston.jpg" alt="preston map">
+            <p>40 N 27 W Booker St</p>
+            <p>Preston, ID</p>
+            <p>999.999.9999</p>
+            <div class="social">
+        
+                <a class="socialmedia" target="_blank" href="https://www.facebook.com"> <img class="icon" src="https://cdn.glitch.com/bcd5cc10-1684-4b77-9094-3e7a8700cd4b%2Ffacebook.png?v=1589654726582" alt="Facebook"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.twitter.com">  <img class="icon" src="images/twitter.png" alt="Twitter"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="Youtube"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.pinterest.com"><img class="icon" src="images/pinterest.png" alt="Pinterest"></a>
+              </div>
+        </div>
     </main>
     <footer>
         <div id="year"></div>
@@ -45,6 +101,7 @@
       </footer>
 
     <script src="js/weather.js"></script>
+    <script src="js/bannerad.js"></script>
 </body>
 
 </html>
