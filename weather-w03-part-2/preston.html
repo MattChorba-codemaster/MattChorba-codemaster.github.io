@@ -36,15 +36,19 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="heroDiv">
-            <div class="hero-ph"><img id="heroImage" src="images/Banner-Image-Placeholder-2.png" alt="preston banner photo"></div>
-            <section class="weatherSummary">
+            <picture class="hero-ph">
+                <source media="(max-width: 360px)" srcset="images/PrestonHero360.jpg">
+                <source media="(max-width: 760px)" srcset="images/PrestonHero760.jpg">
+                <img id="heroImage" src="images/PrestonHero960.jpg" alt="preston banner photo">
+            </picture>
+            <section class="weatherSummary" onload="windChill()">
                 <h3 class="weatherSummaryHeader">Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>High: 76&deg;F </p>
-                <p>Wind Chill: &deg;F</p>
-                <p>Humidity: 69&percnt;</p>
-                <p>Wind Speed: 5 mph</p>
-        </section>
+                <p id="currentWeather">Currently: Sunny</p>
+                <p>High: <span id="highTemp">76</span>&deg;F </p>
+                <p>Wind Chill: <span id="windChillValue"></span>&deg;F</p>
+                <p id="humidity">Humidity: 69&percnt;</p>
+                <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
+            </section>
         </div>
         <div id="fiveDayForecast" class="contentBox">
             <h3>5 Day Forecast</h3>
@@ -102,6 +106,7 @@
 
     <script src="js/weather.js"></script>
     <script src="js/bannerad.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>

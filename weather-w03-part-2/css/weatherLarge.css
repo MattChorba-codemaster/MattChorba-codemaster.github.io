@@ -1,5 +1,12 @@
   
 @media only screen and (min-width: 60em) {
+	.heroDiv {
+		margin: 10px auto;
+		position: relative;
+		width: 960px;
+		height: 300px;
+	}
+	
 	nav a {
 		font-size: 1.1rem;
 	}
