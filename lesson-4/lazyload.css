@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-gap: 100px;
+    margin-left: 40%;
+}
+
+h1 {
+    margin-left: -5%;
+}
+
+picture img[data-src] {
+    filter: blur(0.7em);
+}
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
