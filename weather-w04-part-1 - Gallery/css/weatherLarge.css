@@ -1,0 +1,32 @@
+  
+@media only screen and (min-width: 60em) {
+	.heroDiv {
+		margin: 10px auto;
+		position: relative;
+		width: 960px;
+		height: 300px;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+
+	.contentBox {
+        background-color: #ccc;
+	}
+	
+	.weatherGalleryPhotos {
+		display: inline-grid;
+		grid-template-columns: auto auto auto;
+		width: 960px;
+	}
+
+	.weatherPicture:hover {
+		box-shadow: 0 0 50px #333;
+	  }
+
+	figcaption {
+		display: inherit;
+	}
+
+}
