@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Matt Chorba || WDD 230 || Lesson 2 Weather Dot Weather Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/weatherSmall.css"/>
+    <link rel="stylesheet" href="css/weatherMedium.css"/>
+    <link rel="stylesheet" href="css/weatherLarge.css"/>
+    
+</head>
+<body onload="toggleBannerAd()">
+    <header>
+        <div class="bannerAd">There is a pancake hodown at the community center on Saturday!  Bring your cat.</div>
+        <h1 class="logo">
+        <img id="logo" src="images/Free_Sample_By_Wix.jpeg" alt="logo">
+        Weather Dot</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>  
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-7.html">Gallery</a></li>            
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="weatherGalleryPhotos">
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Cloudy_Weather_1280x720.jpg" alt="Cloudy Weather"></picture><figcaption>A Cloudy Day in Town</figcaption></figure>
+
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Fall_Weather_1280x720.jpg" alt="Fall Weather"></picture><figcaption>Beautiful Fall Weather</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Icy_Weather_1280x720.jpg" alt="Icy Weather"></picture><figcaption>Icy Cold Out on the Lake</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Lightning_Weather_1280x720.jpg" alt="Lightning Weather"></picture><figcaption>Lightning is So Deadly</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Overcast_Weather_1280x720.jpg" alt="Overcast Weather"></picture><figcaption>Overcast Over the Mountains</figcaption></figure>
+        
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Puffy_Cloud_Weather_1280x720.jpg" alt="Puffy Cloud Weather"></picture><figcaption>Puffy Clouds Over Meatball</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Rainy_Weather_1280x720.jpg" alt="Rainy Weather"></picture><figcaption>It Rains 200 Days per Year</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Summer_Sunset_Weather_1280x720.jpg" alt="Summer Sunset Weather"></picture><figcaption>Summer Sunsets are Beautiful</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images/Weather/Winter_Weather_1280x720.jpg" alt="Winter Weather"></picture><figcaption>Who Doesn't Love Snow?</figcaption></figure>
+        </div>
+
+        <div class="contentBox">
+            <h4>Contact Information</h4>
+            <img id="prestonMap" src="images/Preston.jpg" alt="preston map">
+            <p>40 N 27 W Booker St</p>
+            <p>Preston, ID</p>
+            <p>999.999.9999</p>
+            <div class="social">
+        
+                <a class="socialmedia" target="_blank" href="https://www.facebook.com"> <img class="icon" src="https://cdn.glitch.com/bcd5cc10-1684-4b77-9094-3e7a8700cd4b%2Ffacebook.png?v=1589654726582" alt="Facebook"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.twitter.com">  <img class="icon" src="images/twitter.png" alt="Twitter"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="Youtube"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.pinterest.com"><img class="icon" src="images/pinterest.png" alt="Pinterest"></a>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div id="year"></div>
+        <div id="todayDate"></div>
+      </footer>
+
+    <script src="js/bannerad.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
