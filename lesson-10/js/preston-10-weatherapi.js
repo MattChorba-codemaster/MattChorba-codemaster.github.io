@@ -12,9 +12,8 @@ fetch(apiURL)
   const desc = jsObject.weather[0].description;  // note how we reference the weather array
   document.getElementById('currentWeather').textContent = desc;
   document.getElementById("windChillValue").textContent = "N/A";
-  document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-  document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-  document.getElementById('icon').setAttribute('alt', desc);
 
+  windchill();
+  
   });
  
