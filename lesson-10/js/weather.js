@@ -7,11 +7,11 @@ document.getElementById("year").innerHTML = '&copy;' + d.getFullYear() + '&#124;
 let oLastModif = new Date(document.todayDate);
 document.getElementById("todayDate").innerHTML = days[d.getDay()] + ', ' + d.getDate() +' ' + months[d.getMonth()] + ' ' + d.getFullYear();
 
-document.getElementById("today").innerHTML = days[d.getDay()];
-document.getElementById("todayPlusOne").innerHTML = days[d.getDay() + 1];
-document.getElementById("todayPlusTwo").innerHTML = days[d.getDay() + 2];
-document.getElementById("todayPlusThree").innerHTML = days[d.getDay() + 3];
-document.getElementById("todayPlusFour").innerHTML = days[d.getDay() + 4];
+document.getElementById("today").innerHTML = days[d.getDay() + 1];
+document.getElementById("todayPlusOne").innerHTML = days[d.getDay() + 2];
+document.getElementById("todayPlusTwo").innerHTML = days[d.getDay() + 3];
+document.getElementById("todayPlusThree").innerHTML = days[d.getDay() + 4];
+document.getElementById("todayPlusFour").innerHTML = days[d.getDay() + 5];
 
 function toggleMenu() {
     document

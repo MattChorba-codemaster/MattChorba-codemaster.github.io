@@ -1,11 +1,6 @@
   
 @media only screen and (min-width: 60em) {
-	div.heroDiv {
-		margin: 10px auto;
-		position: relative;
-		width: 960px;
-		height: auto;
-	}
+
 	
 	nav a {
 		font-size: 1.1rem;
@@ -23,6 +18,9 @@
 
 	.weatherPicture:hover {
 		box-shadow: 0 0 50px #333;
+	  }
+	  .weatherSummary {
+		left: 2.25rem;
 	  }
 
 	figcaption {
