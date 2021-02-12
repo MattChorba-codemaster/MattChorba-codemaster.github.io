@@ -1,0 +1,67 @@
+
+@media only screen and (min-width: 29em) {
+	
+    
+    .navigation { 
+        display: flex; 
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li { 
+        display: block;
+        flex: 1 1 100%; 
+    }
+    .navigation li a {
+		color: yellow;
+    }
+
+    .contentBox {
+        background-color: #bed;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 1rem;
+        display: block;
+    }
+
+    #prestonMap {
+        display: flex;
+        float: left;
+    }
+
+    #fiveDayForecast {
+        display: inline-block;
+    }
+
+    .weatherGalleryPhotos {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+    }
+
+    .cards {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+    }
+
+    
+    .cardstwo {
+		display: inline-grid;
+		grid-template-columns: auto auto auto auto auto;
+    }
+
+
+
+  
+
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+}
