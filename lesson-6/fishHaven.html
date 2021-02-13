@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Matt Chorba || WDD 230 || Lesson 4 Weather Dot Stormcenter Form Thanks Page</title>
+    <title>Matt Chorba || WDD 230 || Lesson 6 Weather Dot Fish Haven Idaho</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="css/weatherSmall.css"/>
     <link rel="stylesheet" href="css/weatherMedium.css"/>
     <link rel="stylesheet" href="css/weatherLarge.css"/>
-    
 </head>
-<body onload="toggleBannerAd()">
+<body>
     <header>
-        <div class="bannerAd">There is a pancake hodown at the community center on Saturday!  Bring your cat.</div>
+        
         <h1 class="logo">
         <img id="logo" src="images/Free_Sample_By_Wix.jpeg" alt="logo">
         Weather Dot</h1>
@@ -29,20 +28,48 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodaSprings.html">Soda Springs</a></li>
-            <li><a href="fishHaven.html">Fish Haven</a></li>  
+            <li class="active"><a href="fishHaven.html">Fish Haven</a></li>  
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>            
+            <li><a href="gallery.html">Gallery</a></li>            
         </ul>
     </nav>
     <main>
-        <h1>Stormcenter Reporting Form</h1>
-        <p>Thanks for reporting the storm.  We will get back to you within a week with a response.</p>
-
+        <h2>Fish Haven Idaho</h2>
+        <div class="heroDiv">
+            <picture class="hero-ph">
+                <source media="(max-width: 360px)" srcset="images/FishHavenHero360.jpg">
+                <source media="(max-width: 760px)" srcset="images/FishHavenHero760.jpg">
+                <img id="heroImage" src="images/FishHavenHero960.jpg" alt="fish haven banner photo">
+            </picture>
+            <section class="weatherSummary">
+                <h3 class="weatherSummaryHeader">Weather Summary</h3>
+                <p>Currently: <span id="currentWeather"></span></p>
+                <p>High: <span id="highTemp"></span>&deg;F </p>
+                <p>Wind Chill: <span id="windChillValue"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>&percnt;</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </section>
+        </div>
+        <div id="fiveDayForecast" class="contentBox">
+            <h3>5 Day Forecast</h3>
+            <div class="cardstwo"></div>
+        </div>
+        <div class="townEventsPreston">
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="contentBox">
+            <h3>The Psychology of Fish</h3>
+            <div><p>Culum Brown, a professor at Macquarie University in Sydney, Australia, has published a 
+                review paper in the journal Animal Cognition titled "Fish intelligence, sentience and ethics" 
+                that clearly shows that fish are sentient and emotional beings and clearly feel pain in much 
+                the same way that humans do.  Amazing.
+            </p></div>
+            <img id="articleImage" src="images/pexels-laker-6156550.jpg" alt="fish bone"></div>
         <div class="contentBox">
             <h4>Contact Information</h4>
-            <img id="prestonMap" src="images/Preston.jpg" alt="preston map">
-            <p>40 N 27 W Booker St</p>
-            <p>Preston, ID</p>
+            <img id="prestonMap" src="images/FishHaven.jpg" alt="fish haven map">
+            <p>13 W 49 S Electroplate Blvd</p>
+            <p>Fish Haven, ID</p>
             <p>999.999.9999</p>
             <div class="social">
         
@@ -65,11 +92,15 @@
     <footer>
         <div id="year"></div>
         <div id="todayDate"></div>
-
       </footer>
 
+    <script src="js/weather.js"></script>
     <script src="js/bannerad.js"></script>
-    <script src="js/lazyload.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/fishHaven-weatherapi.js"></script>
+    <script src="js/fishHaven-weatherapi5day.js"></script>
+    <script src="js/townEventsFishHaven.js"></script>
+    
 </body>
 
 </html>

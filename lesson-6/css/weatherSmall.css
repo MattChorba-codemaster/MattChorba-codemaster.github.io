@@ -166,12 +166,12 @@ picture.hero-ph {
 }
 
 .bannerAd {
-	display: block;
+	display: none;
 	background-color: rgb(229, 255, 0);
 }
 
-.notFriday {
-	display: none;
+.itIsFriday {
+	display: block;
 }
 
 #articleImage {
@@ -324,7 +324,7 @@ form label.top input:required:valid {
 
 .cardstwo {
 	display: inline-grid;
-	grid-template-columns: auto;
+	grid-template-columns: auto auto auto auto auto;
 
 }
 

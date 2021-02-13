@@ -12,6 +12,7 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         do {
             let card = document.createElement('section');
+            let div = document.createElement('div');
             let h2 = document.createElement('h2');
             let h3 = document.createElement('h3');
             let p1 = document.createElement('p');
@@ -27,12 +28,14 @@ fetch(requestURL)
             townPic.setAttribute('src', 'images/Weather/' + towns[i].photo);
             townPic.setAttribute('alt', towns[i].name);
 
-            card.appendChild(h2);
-            card.appendChild(h3);
-            card.appendChild(p1);
-            card.appendChild(p2);
-            card.appendChild(p3);
+            card.appendChild(div);
+            div.appendChild(h2);
+            div.appendChild(h3);
+            div.appendChild(p1);
+            div.appendChild(p2);
+            div.appendChild(p3);
             card.appendChild(townPic);
+          
 
             document.querySelector('div.cards').appendChild(card);
             i++;
@@ -40,6 +43,7 @@ fetch(requestURL)
 
           do {
             let card = document.createElement('section');
+            let div = document.createElement('div');
             let h2 = document.createElement('h2');
             let h3 = document.createElement('h3');
             let p1 = document.createElement('p');
@@ -55,11 +59,12 @@ fetch(requestURL)
             townPic.setAttribute('src', 'images/Weather/' + towns[j].photo);
             townPic.setAttribute('alt', towns[j].name);
 
-            card.appendChild(h2);
-            card.appendChild(h3);
-            card.appendChild(p1);
-            card.appendChild(p2);
-            card.appendChild(p3);
+            card.appendChild(div);
+            div.appendChild(h2);
+            div.appendChild(h3);
+            div.appendChild(p1);
+            div.appendChild(p2);
+            div.appendChild(p3);
             card.appendChild(townPic);
 
             document.querySelector('div.cards').appendChild(card);

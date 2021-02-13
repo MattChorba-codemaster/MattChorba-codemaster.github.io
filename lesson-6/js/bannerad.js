@@ -1,8 +1,9 @@
 function toggleBannerAd() { 
         var d = new Date();
-        if(d.getDay != 5)  {
+        console.log(d.getDay());
+        if(d.getDay() == 5)  {
          document
              .getElementsByClassName("bannerAd")[0]
-                .classList.toggle("notFriday");
+                .classList.toggle("itIsFriday");
         }
 }

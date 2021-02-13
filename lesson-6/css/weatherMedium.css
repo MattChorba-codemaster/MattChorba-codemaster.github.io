@@ -42,25 +42,26 @@
 
     .cards {
         display: inline-grid;
-        grid-template-columns: auto auto;
+
     }
 
+
     
-    .cardstwo {
-		display: inline-grid;
-		grid-template-columns: auto auto auto auto auto;
+    .cardstwo section {
+		display: inline-flex;
+		flex-direction: column;
     }
 
 
 
   
 
-    section {
+    .cards section {
         display: flex;
         flex-direction: row;
     }
 
-    section:nth-child(odd) {
+    .cards section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
