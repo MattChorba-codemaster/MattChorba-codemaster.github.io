@@ -1,0 +1,76 @@
+
+@media only screen and (min-width: 29em) {
+	
+    
+    .navigation { 
+        display: flex; 
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li { 
+        display: block;
+        flex: 1 1 100%; 
+    }
+    .navigation li a {
+		color: yellow;
+    }
+
+    .contentBox {
+        background-color: #bed;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 1rem;
+        display: block;
+    }
+
+    .rentButton {
+        width: 100px;
+        height: auto;
+    }
+
+    #locationMap {
+        display: flex;
+        float: left;
+    }
+
+    #fiveDayForecast {
+        display: inline-block;
+    }
+
+    .weatherGalleryPhotos {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+    }
+
+    .cards {
+        display: inline-grid;
+
+    }
+
+
+    
+    .cardstwo section {
+		display: inline-flex;
+		flex-direction: column;
+    }
+
+
+
+  
+
+    .cards section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+
+
+
+}

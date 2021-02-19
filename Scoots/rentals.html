@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Matt Chorba || WDD 230 || Lesson 6 Weather Dot Soda Springs Idaho</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/weatherSmall.css"/>
+    <link rel="stylesheet" href="css/weatherMedium.css"/>
+    <link rel="stylesheet" href="css/weatherLarge.css"/>
+</head>
+<body>
+    <header>
+        
+        <h1 class="logo">
+        <img id="logo" src="images/Free_Sample_By_Wix.jpeg" alt="logo">
+        Weather Dot</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="rentals.html">Rentals</a></li>  
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>           
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <div class="heroDiv">
+            <picture class="hero-ph">
+                <source media="(max-width: 360px)" srcset="images/SodaSpringsHero360.jpg">
+                <source media="(max-width: 760px)" srcset="images/SodaSpringsHero760.jpg">
+                <img id="heroImage" src="images/SodaSpringsHero960.jpg" alt="soda springs banner photo">
+            </picture>
+            <section class="weatherSummary">
+                <h3 class="weatherSummaryHeader">Weather Summary</h3>
+                <p>Currently: <span id="currentWeather"></span></p>
+                <p>High: <span id="highTemp"></span>&deg;F </p>
+                <p>Wind Chill: <span id="windChillValue"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>&percnt;</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </section>
+        </div>
+        <div id="fiveDayForecast" class="contentBox">
+            <h3>5 Day Forecast</h3>
+            <div class="cardstwo"></div>
+        </div>
+        <div class="townEventsPreston">
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="contentBox">
+            <h3>It's All About the Fizz</h3>
+            <div><p>Flaunt the Fizz  contest is officially on! You might wanna start brainstorming an innovative new soda combo
+                —because you could win $100,000 for it.
+                So how's it work?  The concept is pretty simple: You'll mix a few of your fave flavors (the max is three, fyi), 
+                snap a pic, and post it to either Instagram or Twitter. Make sure to throw your recipe and the hashtag 
+                #FlaunttheFizzContest in the caption.
+            </p></div>
+            <img id="articleImage" src="images/pexels-breakingpic-3008.jpg" alt="soda cans"></div>
+        <div class="contentBox">
+            <h4>Contact Information</h4>
+            <img id="prestonMap" src="images/SodaSprings.jpg" alt="soda springs map">
+            <p>57 E 36 W Chaibotsky St</p>
+            <p>Soda Springs, ID</p>
+            <p>999.999.9999</p>
+            <div class="social">
+        
+                <a class="socialmedia" target="_blank" href="https://www.facebook.com"> <img class="icon" src="https://cdn.glitch.com/bcd5cc10-1684-4b77-9094-3e7a8700cd4b%2Ffacebook.png?v=1589654726582" alt="Facebook"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.twitter.com">  <img class="icon" src="images/twitter.png" alt="Twitter"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="Youtube"></a>
+                
+                
+                <a class="socialmedia" target="_blank" href="https://www.pinterest.com"><img class="icon" src="images/pinterest.png" alt="Pinterest"></a>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <div id="year"></div>
+        <div id="todayDate"></div>
+      </footer>
+
+    <script src="js/weather.js"></script>
+    <script src="js/bannerad.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/sodaSprings-weatherapi.js"></script>
+    <script src="js/sodaSprings-weatherapi5day.js"></script>
+    <script src="js/townEventsSodaSprings.js"></script>
+    
+</body>
+
+</html>

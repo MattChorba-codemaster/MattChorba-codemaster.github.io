@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Matt Chorba || WDD 230 || Scoots Home Page</title>
+    <title>Matt Chorba || WDD 230 || Lesson 2 Weather Dot Preston Idaho</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/weatherMedium.css"/>
     <link rel="stylesheet" href="css/weatherLarge.css"/>
 </head>
-<body>
+<body onload="toggleBannerAd()">
     <header>
         <div class="bannerAd">There is a pancake hodown at the community center on Saturday!  Bring your cat.</div>
         <h1 class="logo">
@@ -25,16 +25,43 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="sodaSprings.html">Soda Springs</a></li>
-            <li><a href="fishHaven.html">Fish Haven</a></li>  
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>  
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>           
         </ul>
     </nav>
     <main>
-        <div class="cards"></div>
+        <h2>Preston Idaho</h2>
+        <div class="heroDiv">
+            <picture class="hero-ph">
+                <source media="(max-width: 360px)" srcset="images/PrestonHero360.jpg">
+                <source media="(max-width: 760px)" srcset="images/PrestonHero760.jpg">
+                <img id="heroImage" src="images/PrestonHero960.jpg" alt="preston banner photo">
+            </picture>
+            <section class="weatherSummary">
+                <h3 class="weatherSummaryHeader">Weather Summary</h3>
+                <p>Currently: <span id="currentWeather"></span></p>
+                <p>High: <span id="highTemp"></span>&deg;F </p>
+                <p>Wind Chill: <span id="windChillValue"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>&percnt;</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+            </section>
+        </div>
+        <div id="fiveDayForecast" class="contentBox">
+            <h3>5 Day Forecast</h3>
+            <div class="cardstwo"></div>
+        </div>
+        <div class="townEventsPreston">
+            <h1>Upcoming Events</h1>
+        </div>
+        <div class="contentBox">
+            <h3>Yogatta Try This!</h3>
+            <p>Every time you get out of body, it pulls you right back in.  Come and learn how to wind up
+                and relax.  We have classes for all levels, and we even make you sign a waiver.
+            </p>
+            <img id="articleImage" src="images/pexels-gabby-k-5384560.jpg" alt="yoga in park"></div>
         <div class="contentBox">
             <h4>Contact Information</h4>
             <img id="prestonMap" src="images/Preston.jpg" alt="preston map">
@@ -62,15 +89,15 @@
     <footer>
         <div id="year"></div>
         <div id="todayDate"></div>
-        <a href="images/1-Homepage-Large.png">Homepage Large Wireframe</a>
-        <a href="images/2-Homepage-Medium.png">Homepage Medium Wireframe</a>
-        <a href="images/3-Homepage-Small.png">Homepage Small Wireframe</a>
       </footer>
 
-
-    <script src="js/bannerad.js"></script>
-    <script src="js/json.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/bannerad.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/preston-weatherapi.js"></script>
+    <script src="js/preston-weatherapi5day.js"></script>
+    <script src="js/townEvents.js"></script>
+    
 </body>
 
 </html>

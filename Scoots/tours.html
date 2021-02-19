@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Matt Chorba || WDD 230 || Scoots Home Page</title>
+    <title>Matt Chorba || WDD 230 || Lesson 2 Weather Dot Weather Gallery</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/weatherSmall.css"/>
     <link rel="stylesheet" href="css/weatherMedium.css"/>
     <link rel="stylesheet" href="css/weatherLarge.css"/>
+    
 </head>
 <body>
     <header>
@@ -25,16 +26,35 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="sodaSprings.html">Soda Springs</a></li>
-            <li><a href="fishHaven.html">Fish Haven</a></li>  
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>  
+            <li><a href="reservations.html">Reservations</a></li>
+            <li class="active"><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>           
         </ul>
     </nav>
     <main>
-        <div class="cards"></div>
+        <h2>Weather Gallery</h2>
+        <div class="weatherGalleryPhotos">
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Cloudy_Weather_1280x720.jpg" alt="Cloudy Weather"></picture><figcaption>A Cloudy Day in Town</figcaption></figure>
+
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Fall_Weather_1280x720.jpg" alt="Fall Weather"></picture><figcaption>Beautiful Fall Weather</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Icy_Weather_1280x720.jpg" alt="Icy Weather"></picture><figcaption>Icy Cold Out on the Lake</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Lightning_Weather_1280x720.jpg" alt="Lightning Weather"></picture><figcaption>Lightning is So Deadly</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Overcast_Weather_1280x720.jpg" alt="Overcast Weather"></picture><figcaption>Overcast Over the Mountains</figcaption></figure>
+        
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Puffy_Cloud_Weather_1280x720.jpg" alt="Puffy Cloud Weather"></picture><figcaption>Puffy Clouds Over Meatball</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Rainy_Weather_1280x720.jpg" alt="Rainy Weather"></picture><figcaption>It Rains 200 Days per Year</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images\Weather\Summer_Sunset_Weather_1280x720.jpg" alt="Summer Sunset Weather"></picture><figcaption>Summer Sunsets are Beautiful</figcaption></figure>
+          
+        <figure><picture class="weatherPicture"><img src="images/Placeholder_1280x720.jpg" data-src="images/Weather/Winter_Weather_1280x720.jpg" alt="Winter Weather"></picture><figcaption>Who Doesn't Love Snow?</figcaption></figure>
+        </div>
+
         <div class="contentBox">
             <h4>Contact Information</h4>
             <img id="prestonMap" src="images/Preston.jpg" alt="preston map">
@@ -62,14 +82,10 @@
     <footer>
         <div id="year"></div>
         <div id="todayDate"></div>
-        <a href="images/1-Homepage-Large.png">Homepage Large Wireframe</a>
-        <a href="images/2-Homepage-Medium.png">Homepage Medium Wireframe</a>
-        <a href="images/3-Homepage-Small.png">Homepage Small Wireframe</a>
       </footer>
 
-
     <script src="js/bannerad.js"></script>
-    <script src="js/json.js"></script>
+    <script src="js/lazyload.js"></script>
     <script src="js/weather.js"></script>
 </body>
 
