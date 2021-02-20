@@ -10,18 +10,10 @@
         background-color: #ccc;
 	}
 	
-	.weatherGalleryPhotos {
-		display: inline-grid;
-		grid-template-columns: auto auto auto;
-		width: 960px;
-	}
 
-	.weatherPicture:hover {
-		box-shadow: 0 0 50px #333;
-	  }
-	  .weatherSummary {
+	.weatherSummary {
 		left: 2.25rem;
-	  }
+	}
 
 	figcaption {
 		display: inherit;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta name="description" content="Scoots Site Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Matt Chorba || WDD 230 || Scoots Home Page</title>
+    <title>Matt Chorba || WDD 230 || Scoots Contact Confirmation Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
@@ -24,90 +24,24 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>  
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>            
+            <li><a href="contact.html">Contact</a></li>           
         </ul>
     </nav>
     <main>
+        <h2>Thanks for Reaching Out</h2>
         <div class="heroDiv">
-            <button class="rentButton" type="button" onclick="location.href = 'reservations.html'"><strong>RENT</strong></button>
             <picture class="hero-ph">
                 <source media="(max-width: 360px)" srcset="images/ScootsHero360.jpg">
                 <source media="(max-width: 760px)" srcset="images/ScootsHero760.jpg">
                 <img id="heroImage" src="images/ScootsHero960.jpg" alt="soda springs banner photo">
             </picture>
+            <h2>Thanks for contacting us.  We will respond within 24-business hours.</h2>
         </div>
-        <div class="weatherSummary">
-            <h3 class="weatherSummaryHeader">Weather Summary</h3>
-            <p>Current Temp: <span id="currentTemp"></span>&deg;F</p>
-            <p>Currently: <span id="currentWeather"></span></p>
-            <p>Humidity: <span id="humidity"></span>&percnt;</p>
-        </div>
-        <div class="rentals">
-            <section>
-                <h2>Honda Metro Scooter</h2>
-                <div>
-                    <p>1-person Scooter $30/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/Metro960.jpg" alt="Honda Metro Scooter"></a>
-            </section>
-            <section>
-                <h2>Honda Dio Scooter</h2>
-                <div>
-                    <p>2-person Scooter $40/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/Dio960.jpg" alt="Honda Dio Scooter"></a>
-            </section>
-            <section>
-                <h2>Honda PCX150 Scooter</h2>
-                <div>
-                    <p>2-person Scooter $50/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/PCX960.jpg" alt="Honda PCX150 Scooter"></a>
-            </section>
-            <section>
-                <h2>Honda Pioneer ATV</h2>
-                <div>
-                    <p>4-person Scooter $70/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/PioneerATV960.jpg" alt="Honda Pioneer ATV"></a>
-            </section>
-            <section>
-                <h2>Jeep Wrangler - 4 door with A/C</h2>
-                <div>
-                    <p>5-person "Scooter" $100/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/AC_Jeep960.jpg" alt="Jeep Wrangler 4-door"></a>
-            </section>
-            <section>
-                <h2>Jeep Wrangler - 2 door Open Air</h2>
-                <div>
-                    <p>4-person "Scooter" $85/day</p>
-                </div>
-                <a href="rentals.html"><img class="rentalImage" src="images/Open_Air_Jeep960.jpg" alt="Jeep Wrangler 2-door"></a>
-            </section>
-        </div>
-        <div class="islandLife">
-            <section>
-                <h2>Venture out into our beautiful home.</h2>
-                <img class="lifeImage" src="images/PlayaScene01960.jpg" alt="Beautiful Street">
-            </section>
-            <section>
-                <h2>You might meet some new friends.</h2>
-                <img class="lifeImage" src="images/PlayaScene02960.jpg" alt="Parrots">
-            </section>
-            <section>
-                <h2>There are more beaches than the one at your hotel.</h2>
-                <img class="lifeImage" src="images/PlayaScene03960.jpg" alt="Beach Scene">
-            </section>
-            <section>
-                <h2>It's time for an adventure!</h2>
-                <img class="lifeImage" src="images/PlayaScene04960.jpg" alt="Ocean Cliffs">
-            </section>
-        </div>
+
         <div class="contentBox">
             <h4>Contact Information</h4>
             <img class="locationMap" src="images/PlayaFerry.jpg" alt="location one map">
@@ -139,8 +73,10 @@
 
     <script src="js/lastModified.js"></script>
     <script src="js/togglemenu.js"></script>
+    <script src="js/json.js"></script>
     <script src="js/weatherapi.js"></script>
     <script src="js/weatherapi5day.js"></script>
+    <script src="js/lazyload.js"></script>
 
 </body>
 

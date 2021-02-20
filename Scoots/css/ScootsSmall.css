@@ -57,6 +57,16 @@ h2 {
 	background-color: #5f733600;
 }
 
+.weatherSummary {
+	top: 9rem;
+	left: 1rem;
+	background: radial-gradient(#EBF2EC, #F2A341);
+	border: 1px solid #000;
+	padding: .5rem;
+	box-shadow: 0 0 30px #777;
+	opacity: .75;
+}
+
 nav {
     margin: 0 auto;
     background-color: #D9C6BA;
@@ -132,16 +142,6 @@ picture.hero-ph {
 	width: 100%;
 }
 
-.weatherSummary {
-	top: 9rem;
-	left: 1rem;
-	background: radial-gradient(#eee, #5F7336);
-	border: 1px solid #000;
-	padding: .5rem;
-	box-shadow: 0 0 30px #777;
-	opacity: .75;
-}
-
 .rentButton {
 	position: absolute;
 	top: 50%;
@@ -171,23 +171,9 @@ picture.hero-ph {
 	background: #D9843B;
 }
 
-.bannerAd {
-	display: none;
-	background-color: rgb(229, 255, 0);
-}
-
-.itIsFriday {
-	display: block;
-}
-
 #articleImage {
 	max-width: 200px;
 	height: auto;
-}
-
-.weatherIcon {
-	width: 90%;
-	max-width: 200px;
 }
 
 tr {
@@ -205,11 +191,7 @@ tr {
 }
 
 
-#locationMap {
-	display: none;
-}
-
-#fiveDayForecast {
+.locationMap {
 	display: none;
 }
 
@@ -217,27 +199,19 @@ tr {
 	overflow: auto;
 }
 
-picture.weatherPicture img[data-src] {
+picture.tourPicture img[data-src] {
     filter: blur(0.7em);
 }
   
-picture.weatherPicture img {
+picture.tourPicture img {
     filter: blur(0em);
 	transition: filter 0.5s;
 	max-width: 100%;
 	height: auto;
 }
 
-.weatherGalleryPhotos {
-	display: inline-grid;
-	grid-template-columns: auto;
-	padding: 10px;
-
-}
-
-.weatherPicture {
+.tourPicture {
 	background-color: rgba(255, 255, 255, 0.8);
-	padding: 20px;
 	margin: 0px;
 	font-size: 30px;
 	text-align: center;
@@ -245,14 +219,14 @@ picture.weatherPicture img {
 	height: auto;
   }
 
+.tourPicture:hover {
+	box-shadow: 0 0 50px #333;
+}
+
   picture.weatherPicture {
 	  
 	  height: auto;
   }
-
-figcaption {
-	display: none;
-}
 
 /*----------- FORM ----------------*/
 
@@ -328,27 +302,20 @@ form label.top input:required:valid {
 	color: #2075ff;
 }
 
-.cardstwo {
-	display: inline-grid;
-	grid-template-columns: auto auto auto auto auto;
-
+.rentalImage {
+	max-width: 100%;
+	height: auto;
 }
 
-.cards {
-	display: inline-grid;
-	grid-template-columns: auto;
-	padding: 10px;
-	border: #36454f;
-	background-color: cadetblue;
-
+.lifeImage {
+	max-width: 80%;
+	height: auto;
 }
 
-
-div.cards {
-	margin-left: -10px;
+.rentals section {
+	margin-top: 75px;
 }
 
-div.cards img {
-	width: 100%;
+.rentalsDetails section {
+	margin-top: 75px;
 }
-

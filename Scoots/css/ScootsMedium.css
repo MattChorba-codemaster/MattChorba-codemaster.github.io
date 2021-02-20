@@ -21,29 +21,20 @@
     }
 
     .weatherSummary {
-        position: absolute;
         top: 1rem;
         display: block;
     }
 
     .rentButton {
-        width: 100px;
+        width: 200px;
         height: auto;
     }
 
-    #locationMap {
+    .locationMap {
         display: flex;
         float: left;
     }
 
-    #fiveDayForecast {
-        display: inline-block;
-    }
-
-    .weatherGalleryPhotos {
-        display: inline-grid;
-        grid-template-columns: auto auto;
-    }
 
     .cards {
         display: inline-grid;

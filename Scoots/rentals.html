@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta name="description" content="Assignment portal for Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Matt Chorba || WDD 230 || Lesson 6 Weather Dot Soda Springs Idaho</title>
+    <meta name="description" content="Scoots Site Matt Chorba in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Matt Chorba || WDD 230 || Scoots Rentals Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/weatherSmall.css"/>
-    <link rel="stylesheet" href="css/weatherMedium.css"/>
-    <link rel="stylesheet" href="css/weatherLarge.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ScootsSmall.css"/>
+    <link rel="stylesheet" href="css/ScootsMedium.css"/>
+    <link rel="stylesheet" href="css/ScootsLarge.css"/>
 </head>
 <body>
     <header>
-        
-        <h1 class="logo">
-        <img id="logo" src="images/Free_Sample_By_Wix.jpeg" alt="logo">
-        Weather Dot</h1>
+        <img id="logo" src="images/ScootsLogo.png" alt="logo">
+        <h1 class="logo">Scoots</h1>
+        <h2 class="logo">Why Walk When You Can Scoots!</h2>
     </header>
     <nav>
         <ul class="navigation">
@@ -33,74 +32,117 @@
         </ul>
     </nav>
     <main>
-        <h2>Soda Springs Idaho</h2>
+        <h2>Rentals</h2>
         <div class="heroDiv">
+            <button class="rentButton" type="button" onclick="location.href = 'reservations.html'"><strong>RENT</strong></button>
             <picture class="hero-ph">
-                <source media="(max-width: 360px)" srcset="images/SodaSpringsHero360.jpg">
-                <source media="(max-width: 760px)" srcset="images/SodaSpringsHero760.jpg">
-                <img id="heroImage" src="images/SodaSpringsHero960.jpg" alt="soda springs banner photo">
+                <source media="(max-width: 360px)" srcset="images/ScootsHero360.jpg">
+                <source media="(max-width: 760px)" srcset="images/ScootsHero760.jpg">
+                <img id="heroImage" src="images/ScootsHero960.jpg" alt="soda springs banner photo">
             </picture>
-            <section class="weatherSummary">
-                <h3 class="weatherSummaryHeader">Weather Summary</h3>
-                <p>Currently: <span id="currentWeather"></span></p>
-                <p>High: <span id="highTemp"></span>&deg;F </p>
-                <p>Wind Chill: <span id="windChillValue"></span>&deg;F</p>
-                <p>Humidity: <span id="humidity"></span>&percnt;</p>
-                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+        </div>
+        <div class="rentalsDetails">
+            <section>
+                <h2>Honda Metro Scooter</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsMetro"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayMetro"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayMetro"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayMetro"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayMetro"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/Metro960.jpg" alt="Honda Metro Scooter"></a>
+            </section>
+            <section>
+                <h2>Honda Dio Scooter</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsDio"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayDio"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayDio"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayDio"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayDio"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/Dio960.jpg" alt="Honda Dio Scooter"></a>
+            </section>
+            <section>
+                <h2>Honda PCX150 Scooter</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsPCX"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayPCX"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayPCX"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayPCX"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayPCX"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/PCX960.jpg" alt="Honda PCX150 Scooter"></a>
+            </section>
+            <section>
+                <h2>Honda Pioneer ATV</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsATV"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayATV"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayATV"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayATV"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayATV"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/PioneerATV960.jpg" alt="Honda Pioneer ATV"></a>
+            </section>
+            <section>
+                <h2>Jeep Wrangler - 4 door with A/C</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsJeepFourDoor"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayJeepFourDoor"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayJeepFourDoor"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayJeepFourDoor"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayJeepFourDoor"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/AC_Jeep960.jpg" alt="Jeep Wrangler 4-door"></a>
+            </section>
+            <section>
+                <h2>Jeep Wrangler - 2 door Open Air</h2>
+                <div>
+                    <p>Maximum Persons: <span id="maxPersonsJeepTwoDoor"></span></p>
+                    <p>Reservation Half-day: <span id="reservationHalfDayJeepTwoDoor"></span></p>
+                    <p>Reservation Full-day: <span id="reservationFullDayJeepTwoDoor"></span></p>
+                    <p>Walk-in Half-day: <span id="walkInHalfDayJeepTwoDoor"></span></p>
+                    <p>Walk-in Full-day: <span id="walkInFullDayJeepTwoDoor"></span></p>
+                </div>
+                <a href="reservations.html"><img class="rentalImage" src="images/Open_Air_Jeep960.jpg" alt="Jeep Wrangler 2-door"></a>
             </section>
         </div>
-        <div id="fiveDayForecast" class="contentBox">
-            <h3>5 Day Forecast</h3>
-            <div class="cardstwo"></div>
-        </div>
-        <div class="townEventsPreston">
-            <h1>Upcoming Events</h1>
-        </div>
-        <div class="contentBox">
-            <h3>It's All About the Fizz</h3>
-            <div><p>Flaunt the Fizz  contest is officially on! You might wanna start brainstorming an innovative new soda combo
-                —because you could win $100,000 for it.
-                So how's it work?  The concept is pretty simple: You'll mix a few of your fave flavors (the max is three, fyi), 
-                snap a pic, and post it to either Instagram or Twitter. Make sure to throw your recipe and the hashtag 
-                #FlaunttheFizzContest in the caption.
-            </p></div>
-            <img id="articleImage" src="images/pexels-breakingpic-3008.jpg" alt="soda cans"></div>
-        <div class="contentBox">
-            <h4>Contact Information</h4>
-            <img id="prestonMap" src="images/SodaSprings.jpg" alt="soda springs map">
-            <p>57 E 36 W Chaibotsky St</p>
-            <p>Soda Springs, ID</p>
-            <p>999.999.9999</p>
-            <div class="social">
-        
-                <a class="socialmedia" target="_blank" href="https://www.facebook.com"> <img class="icon" src="https://cdn.glitch.com/bcd5cc10-1684-4b77-9094-3e7a8700cd4b%2Ffacebook.png?v=1589654726582" alt="Facebook"></a>
+            <div class="contentBox">
+                <h4>Contact Information</h4>
+                <img class="locationMap" src="images/PlayaFerry.jpg" alt="location one map">
+                <img class="locationMap" src="images/PuertaMaya.jpg" alt="location two map">
+                    <p>Playa Cozumel Ferry Dock<br>
+                    <p>Carretera Chankanaab<br>
+                    <p>Carretera Costera Sur<br>
+                    <p>999.999.8888</p>
+                    <p></p>
+                    <p>Puerta Maya Terminal<br>
+                    <p>Av. Rafael E. Melgar<br>
+                    <p>Centro 77600 San Miguel<br>
+                    <p>999.999.9999</p>
                 
-                
-                <a class="socialmedia" target="_blank" href="https://www.twitter.com">  <img class="icon" src="images/twitter.png" alt="Twitter"></a>
-                
-                
-                <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a>
-                
-                
-                <a class="socialmedia" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="Youtube"></a>
-                
-                
-                <a class="socialmedia" target="_blank" href="https://www.pinterest.com"><img class="icon" src="images/pinterest.png" alt="Pinterest"></a>
-              </div>
-        </div>
-    </main>
-    <footer>
-        <div id="year"></div>
-        <div id="todayDate"></div>
-      </footer>
-
-    <script src="js/weather.js"></script>
-    <script src="js/bannerad.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="js/sodaSprings-weatherapi.js"></script>
-    <script src="js/sodaSprings-weatherapi5day.js"></script>
-    <script src="js/townEventsSodaSprings.js"></script>
+                <div class="social">
+            
+                    <a class="socialmedia" target="_blank" href="https://www.facebook.com"> <img class="icon" src="https://cdn.glitch.com/bcd5cc10-1684-4b77-9094-3e7a8700cd4b%2Ffacebook.png?v=1589654726582" alt="Facebook"></a>  
+                    <a class="socialmedia" target="_blank" href="https://www.twitter.com">  <img class="icon" src="images/twitter.png" alt="Twitter"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a>  
+                    <a class="socialmedia" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/youtube.png" alt="Youtube"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.pinterest.com"><img class="icon" src="images/pinterest.png" alt="Pinterest"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="year"></div>
+            <div id="lastModified"></div>
+        </footer>
     
-</body>
-
-</html>
+        <script src="js/lastModified.js"></script>
+        <script src="js/togglemenu.js"></script>
+        <script src="js/json.js"></script>
+    
+    
+    </body>
+    
+    </html>

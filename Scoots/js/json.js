@@ -1,73 +1,42 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-var i = 5;
-var j = 1;
+const requestURL = 'https://mattchorba-codemaster.github.io/Scoots/data/rentals.json';
 
 fetch(requestURL)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const towns = jsonObject['towns'];
-        do {
-            let card = document.createElement('section');
-            let div = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let h3 = document.createElement('h3');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
-            let p3 = document.createElement('p');
-            let townPic = document.createElement('img');
+  .then((response) => response.json())
+  .then((jsObjectThree) => {
+    console.log(jsObjectThree);
+    document.getElementById('maxPersonsMetro').textContent = jsObjectThree.Rentals[0].maxpersons;
+    document.getElementById('reservationHalfDayMetro').textContent = jsObjectThree.Rentals[0].reservationhalfday;
+    document.getElementById('reservationFullDayMetro').textContent = jsObjectThree.Rentals[0].reservationfullday;
+    document.getElementById('walkInHalfDayMetro').textContent = jsObjectThree.Rentals[0].walkinhalfday;
+    document.getElementById('walkInFullDayMetro').textContent = jsObjectThree.Rentals[0].walkinfullday;
 
-            h2.textContent = towns[i].name;
-            h3.textContent = towns[i].motto;
-            p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            p2.textContent = 'Population: ' + towns[i].currentPopulation;
-            p3.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-            townPic.setAttribute('src', 'images/Weather/' + towns[i].photo);
-            townPic.setAttribute('alt', towns[i].name);
+    document.getElementById('maxPersonsDio').textContent = jsObjectThree.Rentals[1].maxpersons;
+    document.getElementById('reservationHalfDayDio').textContent = jsObjectThree.Rentals[1].reservationhalfday;
+    document.getElementById('reservationFullDayDio').textContent = jsObjectThree.Rentals[1].reservationfullday;
+    document.getElementById('walkInHalfDayDio').textContent = jsObjectThree.Rentals[1].walkinhalfday;
+    document.getElementById('walkInFullDayDio').textContent = jsObjectThree.Rentals[1].walkinfullday;
 
-            card.appendChild(div);
-            div.appendChild(h2);
-            div.appendChild(h3);
-            div.appendChild(p1);
-            div.appendChild(p2);
-            div.appendChild(p3);
-            card.appendChild(townPic);
-          
+    document.getElementById('maxPersonsPCX').textContent = jsObjectThree.Rentals[2].maxpersons;
+    document.getElementById('reservationHalfDayPCX').textContent = jsObjectThree.Rentals[2].reservationhalfday;
+    document.getElementById('reservationFullDayPCX').textContent = jsObjectThree.Rentals[2].reservationfullday;
+    document.getElementById('walkInHalfDayPCX').textContent = jsObjectThree.Rentals[2].walkinhalfday;
+    document.getElementById('walkInFullDayPCX').textContent = jsObjectThree.Rentals[2].walkinfullday;
 
-            document.querySelector('div.cards').appendChild(card);
-            i++;
-          } while(i < 7);
+    document.getElementById('maxPersonsATV').textContent = jsObjectThree.Rentals[3].maxpersons;
+    document.getElementById('reservationHalfDayATV').textContent = jsObjectThree.Rentals[3].reservationhalfday;
+    document.getElementById('reservationFullDayATV').textContent = jsObjectThree.Rentals[3].reservationfullday;
+    document.getElementById('walkInHalfDayATV').textContent = jsObjectThree.Rentals[3].walkinhalfday;
+    document.getElementById('walkInFullDayATV').textContent = jsObjectThree.Rentals[3].walkinfullday;
 
-          do {
-            let card = document.createElement('section');
-            let div = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let h3 = document.createElement('h3');
-            let p1 = document.createElement('p');
-            let p2 = document.createElement('p');
-            let p3 = document.createElement('p');
-            let townPic = document.createElement('img');
+    document.getElementById('maxPersonsJeepFourDoor').textContent = jsObjectThree.Rentals[4].maxpersons;
+    document.getElementById('reservationHalfDayJeepFourDoor').textContent = jsObjectThree.Rentals[4].reservationhalfday;
+    document.getElementById('reservationFullDayJeepFourDoor').textContent = jsObjectThree.Rentals[4].reservationfullday;
+    document.getElementById('walkInHalfDayJeepFourDoor').textContent = jsObjectThree.Rentals[4].walkinhalfday;
+    document.getElementById('walkInFullDayJeepFourDoor').textContent = jsObjectThree.Rentals[4].walkinfullday;
 
-            h2.textContent = towns[j].name;
-            h3.textContent = towns[j].motto;
-            p1.textContent = 'Year Founded: ' + towns[j].yearFounded;
-            p2.textContent = 'Population: ' + towns[j].currentPopulation;
-            p3.textContent = 'Annual Rain Fall: ' + towns[j].averageRainfall;
-            townPic.setAttribute('src', 'images/Weather/' + towns[j].photo);
-            townPic.setAttribute('alt', towns[j].name);
-
-            card.appendChild(div);
-            div.appendChild(h2);
-            div.appendChild(h3);
-            div.appendChild(p1);
-            div.appendChild(p2);
-            div.appendChild(p3);
-            card.appendChild(townPic);
-
-            document.querySelector('div.cards').appendChild(card);
-            j++;
-          } while(j == 1);
-      });
+    document.getElementById('maxPersonsJeepTwoDoor').textContent = jsObjectThree.Rentals[5].maxpersons;
+    document.getElementById('reservationHalfDayJeepTwoDoor').textContent = jsObjectThree.Rentals[5].reservationhalfday;
+    document.getElementById('reservationFullDayJeepTwoDoor').textContent = jsObjectThree.Rentals[5].reservationfullday;
+    document.getElementById('walkInHalfDayJeepTwoDoor').textContent = jsObjectThree.Rentals[5].walkinhalfday;
+    document.getElementById('walkInFullDayJeepTwoDoor').textContent = jsObjectThree.Rentals[5].walkinfullday;
+  });
